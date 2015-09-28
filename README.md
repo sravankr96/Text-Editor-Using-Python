@@ -1,7 +1,7 @@
 # Text-Editor-Using-Python
 A simple Text Editor with basic needs like editing, saving, creating new document
 ####The following functionalities will be provided in the Editor
-##1. File operations
+###1. File operations
 
 Create a new file
 
@@ -13,7 +13,7 @@ Delete a file
 
 Exit from the editor
 
-##2. Editing operations
+###2. Editing operations
 
 Cut copy and paste
 
@@ -25,11 +25,11 @@ Insert line
 
 Find and Replace
 
-##3. Page Options
+###3. Page Options
 
 Change background and foreground colour
 
-##4. Help options
+###4. Help options
 
 Topics
 
