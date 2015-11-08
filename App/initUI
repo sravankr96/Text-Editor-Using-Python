@@ -1,0 +1,19 @@
+from PyQt5 import QtGui, QtCore, QtWidgets
+from PyQt5.QtCore import Qt
+
+def UI(self):
+
+    self.text = QtWidgets.QTextEdit(self)
+    self.setCentralWidget(self.text)
+
+    self.initMenubar()
+
+    # Initialize a statusbar for the window
+    self.statusbar = self.statusBar()
+
+    # x and y coordinates on the screen, width, height
+    self.setGeometry(100,100,1000,600)
+
+    self.setWindowTitle("Text Editor")
+
+    
