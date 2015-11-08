@@ -1,0 +1,15 @@
+from PyQt5 import QtGui, QtCore, QtWidgets
+from PyQt5.QtCore import Qt
+
+def Menubar(self):
+
+    menubar = self.menuBar()
+
+    #Adding items into the menubar
+    file = menubar.addMenu("File")
+    edit = menubar.addMenu("Edit")
+    view = menubar.addMenu("View")
+    options = menubar.addMenu("Options")
+    about = menubar.addMenu("About")
+
+
