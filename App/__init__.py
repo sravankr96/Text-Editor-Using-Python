@@ -1,21 +1,34 @@
 # Author : Sr@1
-"""
-Using pyqt5 for the gui og the application
-
-"""
-
 import sys
-from pyqt5.QtWidgets import QApplication, QWidget
+from PyQt5 import QtGui, QtCore, QtWidgets
+from PyQt5.QtCore import Qt
+
+#User file imports
+from initUI import UI
+from initMenubar import Menubar
+
+#Main class inheriting from the QMainWindow
+class Main(QtWidgets.QMainWindow):
+
+    def __init__(self, parent = None):
+        QtWidgets.QMainWindow.__init__(self,parent)
+
+        self.filename = ""
+
+        self.initUI()
+
+    initMenubar = Menubar
+    initUI = UI
 
 
-if __name__ == '__main__':
+def main():
 
-    app = QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
 
-    w = QWidget()
-    w.resize(250,150)
-    w.move(300,300)
-    w.setWindowTitle('Sample')
-    w.show()
+    main = Main()
+    main.show()
 
     sys.exit(app.exec_())
+
+if __name__ == "__main__":
+    main()
